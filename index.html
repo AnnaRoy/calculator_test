@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Сalculator</title>
+	<link rel="icon" type="image/png" href="img/favicon/favicon.ico">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32"> 
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>  
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/nouislider.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+		<form class="form-calc" action="#">
+			<div class="item-wrap">
+				<label for="weight">Вес изделия</label>
+				<input id="weight" type="text"/>
+			</div>
+			<div class="item-wrap">
+				<label for="metal">Проба металла</label>
+				<div class="select_wrap select_metal">
+					<select  class="select metal" name="metal" id="metal">		
+						<option value="585">585 проба</option>				
+						<option value="999">999 проба</option>				
+					</select>
+				</div>
+			</div>
+			<div class="item-wrap toggle-btn">
+				<input id="stone" class="toggle_input" type="checkbox"/>
+				<label class="toggle_label" for="stone">Камни и вставки</label>
+				<span class="toggle_text">Окончательная оценочная стоимость залога может отличаться от указанной в расчете</span>
+			</div>
+			<div class="item-wrap">
+				<label class="tariff" for="tariff">Тарифный план</label>
+				<div class="info">
+					<span class="info_icon">i</span>
+					<span class="info_text">Всплывающая подсказка</span>
+				</div>
+				<div class="select_wrap">
+					<select class="select"  name="tariff" id="tariff">
+						<option value="1">&#171;Простой&#187;</option>								
+					</select>
+				</div>
+			</div>
+			<div class="item-wrap">
+				<label for="discount">Ваш дисконтный статус</label>
+				<div class="select_wrap">
+					<select class="select" name="discount" >
+						<option value="no" >Без статуса</option>
+						<option value="yes" >Cтатус</option>
+					</select>
+				</div>
+			</div>
+			<div class="item-wrap ">
+				
+				<label for="range">Срок кредитования до продления</label>
+				<div class="range-line_wrap">                            	
+					<div id="range-line" class="range-line">                            	 	
+					</div>	 
+				</div>			
+
+			</div>
+			<div class="item-wrap">
+				<button class="button " id="calc-btn">Рассчитать кредит</button>
+			</div>
+		</form>
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/js.js"></script>
+</html>
